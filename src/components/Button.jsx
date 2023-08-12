@@ -2,7 +2,29 @@ import React from 'react';
 import './Button.css';
 import {Link} from 'react-router-dom';
 
+const STYLES  = ['btn--primary', 'btn--outline'];
 
-export default const Button = ({children, type, onClick, buttonStylem, buttonSize}) => {
-    return
+const SIZES = ['btn--medium', 'btn--large']
+
+
+export default function Button ({
+    children, 
+    type,
+    onClick,
+    buttonStyle, 
+    buttonSize}
+    ){
+    
+
+        const checkButtonStyle = STYLES.includes(buttonStyle)? buttonStyle : STYLES[0];
+
+        const checkButtonSize = SIZES.includes(buttonSiz)? buttonSize : SIZES[0];
+
+        return (
+            <Link to='/sign-up' className='button-mobile'>
+                <button>
+                    {children}
+                </button>
+            </Link>
+        )
 }
