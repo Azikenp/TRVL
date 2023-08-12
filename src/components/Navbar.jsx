@@ -8,6 +8,10 @@ function Navbar() {
         setClick(prev => !prev)
     }
 
+    const closeMobileMenu = () => {
+        setClick(false)
+    }
+
     return (
         <>
             <nav className="navbar">
@@ -20,7 +24,24 @@ function Navbar() {
                     </div>
                     <ul className={click? 'nav-menu active': 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}></Link>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                                Home
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                                Services
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                Products
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                                Sign Up
+                            </Link>
                         </li>
                     </ul>
                 </div>
