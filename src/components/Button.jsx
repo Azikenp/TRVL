@@ -18,11 +18,15 @@ export default function Button ({
 
         const checkButtonStyle = STYLES.includes(buttonStyle)? buttonStyle : STYLES[0];
 
-        const checkButtonSize = SIZES.includes(buttonSiz)? buttonSize : SIZES[0];
+        const checkButtonSize = SIZES.includes(buttonSize)? buttonSize : SIZES[0];
 
         return (
             <Link to='/sign-up' className='button-mobile'>
-                <button>
+                <button
+                    className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                    onClick={onClick}
+                    type={type}
+                >
                     {children}
                 </button>
             </Link>
