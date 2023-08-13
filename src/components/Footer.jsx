@@ -54,14 +54,14 @@ function Footer() {
         <section className="social-">
             <div className="social-media-wrap">
                 <div className="footer-logo">
-                    <Link to='/' className="social logo">
+                    <Link to='/' className="social-logo">
                         TRVL <i className="fab fa-typo3"></i>
                     </Link>
                 </div>
                 <small className="website-rights">TRVL &copy; 2023</small>
                 <div className="social-icons">
                     <Link 
-                    className="socal-icon-link facebook"
+                    className="social-icon-link facebook"
                     to='/'
                     target='_blank'
                     aria-label='Facebook'
@@ -69,7 +69,7 @@ function Footer() {
                         <i className="fab fa-facebook-f"></i>
                     </Link>
                     <Link 
-                    className="socal-icon-link instagram"
+                    className="social-icon-link instagram"
                     to='/'
                     target='_blank'
                     aria-label='Instagram'
@@ -77,7 +77,7 @@ function Footer() {
                         <i className="fab fa-instagram"></i>
                     </Link>
                     <Link 
-                    className="socal-icon-link youtube"
+                    className="social-icon-link youtube"
                     to='/'
                     target='_blank'
                     aria-label='Youtube'
@@ -86,7 +86,7 @@ function Footer() {
                     </Link>
 
                     <Link 
-                    className="socal-icon-link twitter"
+                    className="social-icon-link twitter"
                     to='/'
                     target='_blank'
                     aria-label='Twitter'
@@ -94,12 +94,12 @@ function Footer() {
                         <i className="fab fa-twitter"></i>
                     </Link>
                     <Link 
-                    className="socal-icon-link linkedin"
+                    className="social-icon-link linkedin"
                     to='/'
                     target='_blank'
                     aria-label='LinkedIn'
                     >
-                        <i className="fab fa-linkedIn"></i>
+                        <i className="fab fa-linkedin"></i>
                     </Link>
                 </div>
             </div>
