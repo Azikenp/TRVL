@@ -7,7 +7,6 @@ import Home from './components/pages/Home';
 import Products from './components/pages/products';
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUP';
-
 function App() {
 
   return (
