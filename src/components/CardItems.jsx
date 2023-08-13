@@ -3,7 +3,7 @@ import {Link } from 'react-router-dom';
 import './Cards.css'
 
 function CardItems(props) {
-  return (
+  return ( 
     <div>
         <>
             <li className='cards__item'>
