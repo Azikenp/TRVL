@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState , useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Button from './Button';
+import './Navbar.css'
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true)
+    const [button, setButton] = useState(true);
 
     const handleClick = () => {
         setClick(prev => !prev)
@@ -22,13 +23,17 @@ function Navbar() {
         }
     }
 
+    useEffect(() => {
+        showBtn()
+    }, [])
+
     window.addEventListener('resize', showBtn)
     
     return (
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         TRVL <i className="fab fa-typo3"></i>
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
