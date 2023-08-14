@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
-import Products from './components/pages/products';
+import Products from './components/pages/Products';
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUP';
 function App() {
